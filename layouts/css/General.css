@@ -1,22 +1,36 @@
 @font-face {
-    font-family: 'Sans Semi';
-    src: url('../fonts//SansSemi/EncodeSansSemiExpanded-Regular.ttf');
+    font-family: 'Arimo';
+    src: url('../fonts/Arimo/Arimo-Regular.ttf');
 }
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+/* Bootstrap icons */
 
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Sans Semi';
+    font-family: 'Arimo';
+    font-size: 1.01em;
 }
 body, html{
     width: 100%;
     height: 100%;
 }
 
+.no-style{
+    border: 0;
+    background-color: rgba(240, 248, 255, 0);
+}
+
 .row{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.row_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .row_center{
     display: flex;
@@ -33,9 +47,189 @@ body, html{
     justify-content: center;
     align-items: stretch;
 }
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.col {
+    height: 100%;
+}
+.col-50 {
+    width: 50%;
+    height: 100%;
+}
+.col-25{
+    width: 25%;
+    height: 100%;
+}
 
 .container{
-    width: 80%;
+    width: 95%;
     height: 100%;
     margin: 0 auto;
+}
+
+
+.fsz-1 {
+    font-size: 0.1em;
+}
+.fsz-2 {
+    font-size: 0.2em;
+}
+.fsz-3 {
+    font-size: 0.3em;
+}
+.fsz-4 {
+    font-size: 0.4em;
+}
+.fsz-5 {
+    font-size: 0.5em;
+}
+.fsz-6 {
+    font-size: 0.6em;
+}
+.fsz-7 {
+    font-size: 0.7em;
+}
+.fsz-8 {
+    font-size: 0.8em;
+}
+.fsz-9 {
+    font-size: 0.9em;
+}
+.fsz-10 {
+    font-size: 1em;
+}
+.fsz-11 {
+    font-size: 1.1em;
+}
+.fsz-12 {
+    font-size: 1.2em;
+}
+.fsz-13 {
+    font-size: 1.3em;
+}
+.fsz-14 {
+    font-size: 1.4em;
+}
+.fsz-15 {
+    font-size: 1.5em;
+}
+.fsz-16 {
+    font-size: 1.6em;
+}
+.fsz-17 {
+    font-size: 1.7em;
+}
+.fsz-18 {
+    font-size: 1.8em;
+}
+.fsz-19 {
+    font-size: 1.9em;
+}
+.fsz-20 {
+    font-size: 2em;
+}
+.fsz-25 {
+    font-size: 2.5em;
+}
+.fsz-30 {
+    font-size: 3em;
+}
+
+.galka {
+    font-weight: 700;
+    transform: rotate(90deg);
+}
+
+
+.elipse {
+    border-radius: 50px;
+}
+
+.btn{
+    padding: 15px;
+    font-size: 1em;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px black;
+
+    transition: 0.4s;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgba(228, 228, 228, 0.199);
+}
+.btn-red{
+    background-color: rgb(255, 77, 77);
+    box-shadow: none;
+    color: white;
+}
+.btn-red:hover{
+    background-color: rgb(253, 44, 44);
+    color: white;
+}
+.btn-white {
+    box-shadow: none;
+}
+.btn-white:hover{
+    box-shadow: 0px 0px 10px rgba(204, 204, 204, 0.562);
+}
+.btn-gray_muted {
+    background-color: rgb(223, 223, 223);
+}
+.btn-gray {
+    background-color: rgb(245, 243, 243);
+}
+.btn-little{
+    padding: 10px;
+}
+
+.slots {
+    display: flex;
+    justify-content: stretch;
+}
+.slot {
+    border-right: 2px rgb(255, 255, 255) solid;
+    border-radius: 4px;
+}
+.slot:last-child {
+    border-right: none;
+}
+
+.border-right{
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+.border-left{
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+.border-bottom{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.411);
+}
+.input-group__input-wrapper{
+    height: 100%;
+    padding: 0 10px;
+    flex-grow: 1;
+}
+.input-group__input{
+    border: 0;
+    height: 100%;
+    width: 90%;
+    padding: 0 10px;
+}
+.input-group__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+    height: 100%;
 }
